@@ -9,12 +9,12 @@
 typedef struct listelement listelement;
 
 // Start of the linked list
-listelement *head = NULL;
+static listelement *head = NULL;
 
 /*
  * Checks if value is in the list
  */
-int contains(int value) {
+static int contains(int value) {
     listelement *list = head;
     while (list != NULL) {
         if (list->value == value) return 1;
